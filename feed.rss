@@ -44,14 +44,14 @@ Fuente: La Función de la Palabra
   <link>
     https://archive.org/details/lfdlp-{{ post.date | date: "%Y-%m-%d" }}
   </link>
-  <enclosure url="http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}.mp3" type="audio/mpeg" />
+  <enclosure url="https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ post.segment}}.mp3" type="audio/mpeg" />
   <description>
     <![CDATA[
     {{ post.date | date: "%Y-%m-%d" }} - Parte {{ post.segment }}
     ]]>
   </description>
   <pubDate>{{ post.pubDate | date_to_rfc822 }}</pubDate>
-  <guid>http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}</guid>
+  <guid>https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ post.segment}}.mp3</guid>
 </item>
 {% endfor %}
 </channel>
