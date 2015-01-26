@@ -42,9 +42,9 @@ Fuente: La Función de la Palabra
     ]]>
   </title>
   <link>
-    {{ post.link }}
+    https://archive.org/details/lfdlp-{{ post.date | date: "%Y-%m-%d" }}
   </link>
-  <enclosure url="http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}" type="audio/mpeg" />
+  <enclosure url="http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}.mp3" type="audio/mpeg" />
   <description>
     <![CDATA[
     {{ post.date | date: "%Y-%m-%d" }} - Parte {{ post.segment }}
