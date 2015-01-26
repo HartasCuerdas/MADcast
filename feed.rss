@@ -1,0 +1,58 @@
+---
+layout: nil
+---
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<itunes:author>
+  <![CDATA[ daccio ]]>
+</itunes:author>
+<title>
+  <![CDATA[ La Función de la Palabra ]]>
+</title>
+<link>
+  http://live-madenegri.pantheon.io
+</link>
+<language>es-ES</language>
+<description>
+<![CDATA[
+Fuente: La Función de la Palabra
+ http://live-madenegri.pantheon.io/
+]]>
+</description>
+<generator>github Pages - Jekyll</generator>
+<image>
+  <url>https://archive.org/download/lfdlp/screen.jpg</url>
+  <title>
+    <![CDATA[ La Función de la Palabra ]]>
+  </title>
+  <link>
+    http://live-madenegri.pantheon.io
+  </link>
+</image>
+<atom:link href="https://raw.githubusercontent.com/HartasCuerdas/MADcast/gh-pages/feed.rss" rel="self" type="application/rss+xml"/>
+<itunes:explicit>clean</itunes:explicit>
+<itunes:image href="https://archive.org/download/lfdlp/screen.jpg"/>
+<itunes:category text="Literature">
+</itunes:category>
+{% for post in site.posts %}
+<item>
+  <title>
+    <![CDATA[
+    {{ post.date | date: "%Y-%m-%d" }} - Parte {{ post.segment }}
+    ]]>
+  </title>
+  <link>
+    {{ post.link }}
+  </link>
+  <enclosure url="http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}" type="audio/mpeg" />
+  <description>
+    <![CDATA[
+    {{ post.date | date: "%Y-%m-%d" }} - Parte {{ post.segment }}
+    ]]>
+  </description>
+  <pubDate>{{ post.pubDate | date_to_rfc822 }}</pubDate>
+  <guid>http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}-parte{{ post.segment}}</guid>
+</item>
+{% endfor %}
+</channel>
+</rss>
