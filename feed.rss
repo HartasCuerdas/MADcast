@@ -32,7 +32,15 @@ Fuente: La Función de la Palabra
 <atom:link href="https://raw.githubusercontent.com/HartasCuerdas/MADcast/gh-pages/feed.rss" rel="self" type="application/rss+xml"/>
 <itunes:explicit>clean</itunes:explicit>
 <itunes:image href="https://archive.org/download/lfdlp/screen.jpg"/>
-<itunes:category text="Literature">
+<itunes:category text="Arts">
+  <itunes:category text="Literature" />
+</itunes:category>
+<itunes:category text="Society &amp; Culture">
+  <itunes:category text="History" />
+  <itunes:category text="Philosophy" />
+</itunes:category>
+<itunes:category text="Science &amp; Medicine">
+  <itunes:category text="Social Sciences" />
 </itunes:category>
 {% assign time_offset = "0|60|120|180|240|300|360" | split:"|" %}
 {% for post in site.posts %}
