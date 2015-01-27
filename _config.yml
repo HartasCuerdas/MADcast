@@ -1,0 +1,1 @@
+exclude: [ _posts/YYYY-MM-DD-template.md, params.json, README.md ]
