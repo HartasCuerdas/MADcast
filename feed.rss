@@ -35,7 +35,7 @@ Fuente: La Función de la Palabra
 </image>
 <atom:link href="https://raw.githubusercontent.com/HartasCuerdas/MADcast/gh-pages/feed.rss" rel="self" type="application/rss+xml"/>
 <itunes:explicit>clean</itunes:explicit>
-<itunes:image href="https://archive.org/download/lfdlp/screen.jpg"/>
+<itunes:image href="http://archive.org/download/lfdlp/screen.jpg"/>
 <itunes:category text="Arts">
   <itunes:category text="Literature" />
 </itunes:category>
