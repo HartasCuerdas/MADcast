@@ -25,7 +25,7 @@ Fuente: La Función de la Palabra
 </description>
 <generator>github Pages - Jekyll</generator>
 <image>
-  <url>https://archive.org/download/lfdlp/screen.jpg</url>
+  <url>"http://archive.org/download/lfdlp/screen.jpg"</url>
   <title>
     <![CDATA[ La Función de la Palabra ]]>
   </title>
