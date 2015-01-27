@@ -23,16 +23,7 @@ Fuente: La Función de la Palabra
  http://live-madenegri.pantheon.io/
 ]]>
 </description>
-<generator>github Pages - Jekyll</generator>
-<image>
-  <url>"http://archive.org/download/lfdlp/screen.jpg"</url>
-  <title>
-    <![CDATA[ La Función de la Palabra ]]>
-  </title>
-  <link>
-    http://live-madenegri.pantheon.io
-  </link>
-</image>
+<generator>github Pages - Jekyll - Liquid - FrontMatter</generator>
 <atom:link href="https://raw.githubusercontent.com/HartasCuerdas/MADcast/gh-pages/feed.rss" rel="self" type="application/rss+xml"/>
 <itunes:explicit>clean</itunes:explicit>
 <itunes:image href="http://archive.org/download/lfdlp/screen.jpg"/>
@@ -56,9 +47,9 @@ Fuente: La Función de la Palabra
         ]]>
       </title>
       <link>
-        https://archive.org/details/lfdlp-{{ post.date | date: "%Y-%m-%d" }}
+        http://archive.org/details/lfdlp-{{ post.date | date: "%Y-%m-%d" }}
       </link>
-      <enclosure url="https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3" type="audio/mpeg" length="{{ post.lengths[forloop.index0] }}" />
+      <enclosure url="http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3" type="audio/mpeg" length="{{ post.lengths[forloop.index0] }}" />
       <description>
         <![CDATA[
         {{ post.date | date: "%Y-%m-%d" }} - Parte {{ segment }}
@@ -66,7 +57,7 @@ Fuente: La Función de la Palabra
       </description>
       {% assign algo = 600  %}
       <pubDate>{{ post.pubDate | date: "%s" | plus : time_offset[forloop.index0] | date_to_rfc822 }}</pubDate>
-      <guid>https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3</guid>
+      <guid>http://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3</guid>
     </item>
   {% endfor %}
 {% endfor %}
