@@ -46,7 +46,7 @@ Fuente: La Función de la Palabra
       <link>
         https://archive.org/details/lfdlp-{{ post.date | date: "%Y-%m-%d" }}
       </link>
-      <enclosure url="https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3" type="audio/mpeg" />
+      <enclosure url="https://archive.org/download/lfdlp-{{ post.date | date: "%Y-%m-%d" }}/parte-{{ segment }}.mp3" type="audio/mpeg" length="{{ post.lengths[forloop.index0] }}" />
       <description>
         <![CDATA[
         {{ post.date | date: "%Y-%m-%d" }} - Parte {{ segment }}
