@@ -6,6 +6,10 @@ layout: none
 <itunes:author>
   <![CDATA[ daccio ]]>
 </itunes:author>
+<itunes:owner>
+  <itunes:name>MADenegri</itunes:name>
+  <itunes:email>hc.madenegri@gmail.com</itunes:email>
+</itunes:owner>
 <title>
   <![CDATA[ La Función de la Palabra ]]>
 </title>
