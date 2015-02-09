@@ -1,1 +1,1 @@
-exclude: [ _posts/YYYY-MM-DD-template.md, params.json, README.md, madinfo.py ]
+exclude: [ _posts/YYYY-MM-DD-template.md, params.json, README.md, filesinfo.py ]
